@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #0B090A;
+    color: white;
+
+    font-size: 20px;
+    font-family: 'DejaVuSansMono', monospace;    
+}
+
+/* /////////// */
+/* Navigation */
+/* ///////// */
+
+main {
+    display: flex;
+    align-items: center;
+
+    height: 90vh;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+#logo {
+    font-size: 24px;
+    padding: 15px;
+}
+
+nav ul {  
+    list-style: none;
+}
+ 
+nav li {
+    display: inline;
+
+    margin: 0 10px 0 10px;
+}
+
+#current-page {
+    text-decoration: underline;
+    text-decoration-color: #E5383B;
+    text-underline-offset: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+nav a:not(#current-page):hover {
+    transition-duration: 0.5s;
+    color: #E5383B;
+}
+
+/* /////////// */
+/*   Footer   */
+/* ///////// */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 300px;
+}
+
+.footer-items {
+    font-family: monospace;
+    text-align: center;
+}
+
+.footer-items h1 {
+    padding: 20px;
+}
+
+.footer-contact a {
+    font-size: 24px;
+    text-decoration: none;
+    
+    color: white;
+    
+    margin: 0 15px 0 15px;
+    padding: 15px;
+}
+
+.footer-contact a:hover {
+    transition: 0.5s;
+    color: #E5383B;
+}
+
+.footer-items p {
+    font-size: 16px;
+    color: #D3D3D3;
+    padding: 10px;
+}

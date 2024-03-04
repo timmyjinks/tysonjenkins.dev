@@ -1,0 +1,122 @@
+/* ///////////// */
+/* Hero Section */
+/* /////////// */
+
+@keyframes slideshow {
+    0%   {left: 0;}
+    100% {right: 100%;}
+}
+
+.hero-section {
+    animation-name: slideshow;
+    animation-duration: 5s;
+    height: 100v;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    background-image:url(../images/rpg.png);
+    background-size: cover;
+}
+
+.hero-section1 {
+    animation-name: slideshow;
+    animation-duration: 5s;
+    height: 100v;
+}
+
+.hero-section1::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    background-image:url(../images/handdetection.png);
+    background-size: cover;
+}
+
+.hero-section2 {
+    animation-name: slideshow;
+    animation-duration: 5s;
+    height: 100v;
+}
+
+.hero-section2::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    background-image:url(../images/translator.png);
+    background-size: cover;
+}
+
+/* //////////// */
+/*  Hero Body  */
+/* ////////// */
+
+.hero-section-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 40%;
+    height: 50%;
+
+    margin: auto;
+}
+
+#hero-name {
+    font-size: 80px;
+    margin: 0px;
+}
+
+.hero-title p{
+    font-family: monospace;
+    opacity: 0.9;
+    font-size: 32px;
+
+    color: #F5F3F4;
+}
+
+.hero-icons a{
+    color: white;
+    font-size: 64px;
+    margin: 0px 20px 0px 20px;
+}
+
+.hero-icons a:hover {
+    transition: 0.5s;
+    color: #E5383B;
+}
+
+#hero-quote {
+    color: #D3D3D3;
+    font-size: 32px;
+}
+
+/* Section */
+
+section {
+    color: #0B090A;
+    background-color: white;
+    height: 1000px;
+}
+
+.resume {
+    text-align: center;
+}
+
+.resume h1 {
+    font-size: 40px;
+    padding: 15px;
+}
+
+.resume embed {
+    width: 50%;
+    height: 800px;
+}
