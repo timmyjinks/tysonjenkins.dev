@@ -3,11 +3,14 @@ section {
     color: #0B090A;
     text-align: center;
     height: 700px;
+
 }
 
 section h1 {
     font-size: 32px;
     padding: 15px;
+
+    margin: 0;
 }
 
 .skills {

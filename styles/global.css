@@ -16,7 +16,6 @@ body {
 main {
     display: flex;
     align-items: center;
-
     height: 90vh;
 }
 
@@ -24,8 +23,9 @@ header {
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 10vh;
+
+    top: 50%;
+    padding: 15px;
 }
 
 .nav-bar {
@@ -38,7 +38,7 @@ header {
 
 #logo {
     font-size: 24px;
-    padding: 15px;
+    margin: 15px;
 }
 
 nav ul {  
@@ -47,8 +47,7 @@ nav ul {
  
 nav li {
     display: inline;
-
-    margin: 0 10px 0 10px;
+    margin: 0 15px 0 15px;
 }
 
 #current-page {
@@ -60,7 +59,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: white;
-    margin: 20px;
+    margin: 0 20px 0 20px;
 }
 
 nav a:not(#current-page):hover {
@@ -87,7 +86,7 @@ footer {
 }
 
 .footer-items h1 {
-    padding: 20px;
+    margin: 20px;
 }
 
 .footer-contact a {
