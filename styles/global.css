@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 
     background-color: #0B090A;
     color: white;
@@ -108,4 +108,21 @@ footer {
     font-size: 16px;
     color: #D3D3D3;
     padding: 10px;
+}
+
+/* /////////////// */
+/*   Scroll bar   */
+/* ///////////// */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D3D3D3;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
 }
