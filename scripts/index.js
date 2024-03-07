@@ -13,6 +13,6 @@ setInterval((e) => {
   i++;
 }, 5000);
 
-fetch("https://animechan.xyz/api/random/anime?title=naruto")
+fetch('https://api.breakingbadquotes.xyz/v1/quotes')
   .then((response) => response.json())
-  .then((data) => (quote.innerHTML = data.quote));
+  .then((data) => (quote.innerHTML = data[0].quote + " - " + data[0].author));
