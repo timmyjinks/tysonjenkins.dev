@@ -7,12 +7,6 @@
     100% {right: 100%;}
 }
 
-.hero-section {
-    animation-name: slideshow;
-    animation-duration: 5s;
-    height: 100v;
-}
-
 .hero-section::before {
     content: '';
     position: absolute;
@@ -23,11 +17,6 @@
     background-size: cover;
 }
 
-.hero-section1 {
-    animation-name: slideshow;
-    animation-duration: 5s;
-    height: 100v;
-}
 
 .hero-section1::before {
     content: '';
@@ -37,12 +26,6 @@
     opacity: 0.2;
     background-image:url(../images/handdetection.png);
     background-size: cover;
-}
-
-.hero-section2 {
-    animation-name: slideshow;
-    animation-duration: 5s;
-    height: 100v;
 }
 
 .hero-section2::before {
@@ -59,10 +42,16 @@
 /*  Hero Body  */
 /* ////////// */
 
+main {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+
 .hero-section-item {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 
     width: 40%;
     height: 50%;
@@ -83,10 +72,10 @@
     color: #F5F3F4;
 }
 
-.hero-icons a{
+.hero-icons a {
     color: white;
-    font-size: 64px;
-    margin: 0px 20px 0px 20px;
+    font-size: 72px;
+    margin: 0px 50px 0px 0px;
 }
 
 .hero-icons a:hover {

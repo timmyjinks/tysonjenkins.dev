@@ -13,12 +13,6 @@ body {
 /* Navigation */
 /* ///////// */
 
-main {
-    display: flex;
-    align-items: center;
-    height: 90vh;
-}
-
 header {
     position: relative;
     display: flex;
@@ -72,31 +66,36 @@ nav a:not(#current-page):hover {
 /* ///////// */
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    height: 300px;
-}
-
-.footer-items {
-    font-family: monospace;
     text-align: center;
+    height: 310px;
 }
 
-.footer-items h1 {
+#footer-socials {
+    font-size: 56px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-contact {
+    width: 60%;
+    padding: 15px;
     margin: 20px;
 }
 
+.footer-contact i {
+    font-size: 72px;
+    padding: 0 20px 0 20px;
+}
+
 .footer-contact a {
-    font-size: 24px;
     text-decoration: none;
-    
     color: white;
-    
-    margin: 0 15px 0 15px;
-    padding: 15px;
 }
 
 .footer-contact a:hover {
@@ -104,10 +103,25 @@ footer {
     color: #E5383B;
 }
 
-.footer-items p {
+.footer-previous, .footer-next {
+    width: 20%;
+    padding: 15px;
+}
+
+.footer-previous p, .footer-next p {
+    border: white 2px solid;
+    padding: 15px;
+}
+
+.footer-previous a, .footer-next a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer-copyright {
     font-size: 16px;
     color: #D3D3D3;
-    padding: 10px;
+    padding: 15px;
 }
 
 /* /////////////// */
