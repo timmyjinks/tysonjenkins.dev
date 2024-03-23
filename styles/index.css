@@ -7,6 +7,14 @@
     100% {right: 100%;}
 }
 
+.hero-section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 .hero-section::before {
     content: '';
     position: absolute;
@@ -17,6 +25,11 @@
     background-size: cover;
 }
 
+.hero-section1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
 
 .hero-section1::before {
     content: '';
@@ -26,6 +39,12 @@
     opacity: 0.2;
     background-image:url(../images/handdetection.png);
     background-size: cover;
+}
+
+.hero-section2 {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .hero-section2::before {
@@ -43,19 +62,21 @@
 /* ////////// */
 
 main {
+    position: relative;
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: 95vh;
+    overflow: hidden;
 }
 
 .hero-section-item {
     position: relative;
     display: flex;
     flex-direction: column;
-
+    
     width: 40%;
     height: 50%;
-
+    
     margin: auto;
 }
 
@@ -101,8 +122,9 @@ section {
 }
 
 .resume h1 {
-    font-size: 40px;
-    padding: 15px;
+    font-size: 80px;
+    margin: 0;
+    padding: 50px;
 }
 
 .resume embed {
