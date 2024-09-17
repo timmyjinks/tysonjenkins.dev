@@ -1,59 +1,67 @@
+section {
+  color: white;
+  background-color: black;
+}
+
 /* ///////////// */
 /* Hero Section */
 /* /////////// */
 
 @keyframes slideshow {
-    0%   {left: 0;}
-    100% {right: 100%;}
+  0% {
+    left: 0;
+  }
+  100% {
+    right: 100%;
+  }
 }
 
 .hero-section {
-    position: relative;
-    height: 100%;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .hero-section::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0.2;
-    background-image:url(../images/rpg.png);
-    background-size: cover;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  background-image: url(../images/rpg.png);
+  background-size: cover;
 }
 
 .hero-section1 {
-    position: relative;
-    height: 100%;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .hero-section1::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0.2;
-    background-image:url(../images/handdetection.png);
-    background-size: cover;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  background-image: url(../images/handdetection.png);
+  background-size: cover;
 }
 
 .hero-section2 {
-    position: relative;
-    height: 100%;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
-
 .hero-section2::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0.2;
-    background-image:url(../images/translator.png);
-    background-size: cover;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  background-image: url(../images/translator.png);
+  background-size: cover;
 }
 
 /* //////////// */
@@ -61,71 +69,97 @@
 /* ////////// */
 
 main {
-    position: relative;
-    display: flex;
-    align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 
-    height: 95vh;
-}   
+  height: 95vh;
+}
 
 .hero-section-item {
-    display: flex;
-    flex-direction: column;
-    
-    width: 40%;
-    height: 50%;
-    
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+  height: 50%;
+
+  margin: auto;
 }
 
 #hero-name {
-    font-size: 80px;
-    margin: 0px;
+  font-size: 80px;
+  margin: 0px;
 }
 
-.hero-title p{
-    font-family: monospace;
-    font-size: 32px;
-    opacity: 0.9;
+.hero-title p {
+  font-family: monospace;
+  font-size: 32px;
+  opacity: 0.9;
 
-    color: #F5F3F4;
+  color: #f5f3f4;
 }
 
 .hero-icons a {
-    color: white;
-    font-size: 72px;
-    margin: 0px 50px 0px 0px;
+  color: white;
+  font-size: 72px;
+  margin: 0px 50px 0px 0px;
 }
 
 .hero-icons a:hover {
-    transition: 0.5s;
-    color: #E5383B;
+  transition: 0.5s;
+  color: #e5383b;
 }
 
 #hero-quote {
-    color: #D3D3D3;
-    font-size: 32px;
+  color: #d3d3d3;
+  font-size: 32px;
 }
 
-/* Section */
+/*//////////*/
+/* About Me */
+/*//////////*/
 
-section {
-    color: #0B090A;
-    background-color: white;
-    height: 1000px;
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.resume {
-    text-align: center;
+.about-item {
+  width: 45%;
+  padding: 25px;
 }
 
-.resume h1 {
-    font-size: 80px;
-    margin: 0;
-    padding: 50px;
+.about img {
+  width: 90%;
 }
 
-.resume embed {
-    width: 50%;
-    height: 800px;
+/*////////*/
+/* Skills */
+/*////////*/
+
+.skill {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skill-item {
+  width: 45%;
+  padding: 25px;
+}
+
+/*/////////*/
+/* Resume */
+/*///////*/
+
+.progress {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.progress-item {
+  width: 45%;
+  padding: 25px;
 }
