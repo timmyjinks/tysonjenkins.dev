@@ -11,8 +11,6 @@
     />
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/index.css" />
-    <script src="scripts/index.js" defer></script>
-    <script src="https://unpkg.com/htmx.org@2.0.2"></script>
     <script
       src="https://kit.fontawesome.com/e3f2f9bf33.js"
       crossorigin="anonymous"
@@ -22,7 +20,9 @@
   <body>
     <header>
       <div class="nav-bar">
-        <p id="logo"><> Tyson Jenkins</p>
+        <p id="logo">
+          <a href="#"><</a><a href="https://grover.sh">></a> Tyson Jenkins
+        </p>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -65,13 +65,12 @@
       </div>
     </main>
     <section>
-      <h1 id="projects">Projects</h1>
       <div class="projects">
         <div class="project-item">
-          <h1>2D Game Engine</h1>
+          <h2>2D Game Engine</h2>
           <h3>
-            A 2D game engine written in c++ using SDL library for common tasks
-            such as displaying points
+            A game engine used for making 2D games, using C++ and the SDL
+            library
           </h3>
           <img src="../images/rust.png" />
           <div class="technologies">
@@ -80,12 +79,16 @@
               <p>SDL</p>
             </div>
           </div>
+          <div class="demonstration">
+            <a href="#">Blog</a>
+            <a href="https://github.com/tjenkins/2DGameEngine">Code</a>
+          </div>
         </div>
         <div class="project-item">
           <h1>Schlatt Dungeon</h1>
           <h3>
-            A rpg game made in Java using the lib-gdx library for displaying
-            graphics
+            A fun 2D rpg game made using Java as well as the lib-gdx library for
+            displaying the 2D graphics
           </h3>
           <img src="../images/rust.png" />
           <div class="technologies">
@@ -94,17 +97,16 @@
               <p>Lib-gdx</p>
             </div>
           </div>
+          <div class="demonstration">
+            <a href="#">Blog</a>
+            <a href="https://github.com/tjenkins/JshlattDungeon">Code</a>
+          </div>
         </div>
+        <a href="#">More Projects</a>
       </div>
     </section>
     <footer>
-      <div>
-        <p id="footer-socials">Contact Me</p>
-      </div>
       <div class="footer-content-wrapper">
-        <div class="footer-previous">
-          <a href="#"><p id="previous"><-- Previous</p></a>
-        </div>
         <div class="footer-contact">
           <a href="https://github.com/timmyjinks"
             ><i class="fa-brands fa-github"></i
@@ -112,9 +114,6 @@
           <a href="https://www.linkedin.com/feed/"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
-        </div>
-        <div class="footer-next">
-          <a href="#"><p id="Next">Next --></p></a>
         </div>
       </div>
       <div>

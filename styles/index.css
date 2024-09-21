@@ -12,11 +12,13 @@ main {
   justify-content: space-evenly;
   align-items: center;
 
-  height: 100vh;
+  height: 90vh;
 }
 
 .hero-section {
   display: flex;
+  justify-content: space-between;
+  width: 85%;
 
   border: 3px solid red;
   border-radius: 5px;
@@ -76,32 +78,33 @@ main {
   width: 90%;
 }
 
-/*////////*/
-/* Skills */
-/*////////*/
-
-.skill {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.skill-item {
-  width: 45%;
-  padding: 25px;
-}
-
+/*///////////*/
+/* Projects */
 /*/////////*/
-/* Resume */
-/*///////*/
 
-.progress {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+section {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.progress-item {
-  width: 45%;
-  padding: 25px;
+.projects {
+  width: 85%;
+  margin: auto;
+}
+
+.project-item {
+  border: 1px solid red;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.project-item > .technologies > .tech > p {
+  display: inline;
+
+  border: 1px solid red;
+}
+
+.project-item > .demonstration > p {
+  display: inline;
+  border: 1px solid red;
 }
