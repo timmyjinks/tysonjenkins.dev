@@ -18,14 +18,13 @@ main {
 .hero-section {
   display: flex;
   justify-content: space-between;
-  width: 85%;
+  width: 65%;
 
   border: 1px solid red;
-  /* border-radius: 5px; */
+  border-radius: 5px;
 }
 
 .hero-section-item {
-  height: fit-content;
   padding: 15px;
   margin: 15px;
 }
@@ -69,6 +68,8 @@ main {
   align-items: center;
 }
 
+a:
+
 .about-item {
   width: 45%;
   padding: 25px;
@@ -96,6 +97,7 @@ section {
 .project-item {
   text-align: left;
   border: 1px solid red;
+  border-radius: 5px;
   margin-bottom: 15px;
   padding: 0;
 }
@@ -121,6 +123,7 @@ div {
 .project-item > .technologies > p {
   padding: 10px 30px;
   border: 1px solid red;
+  border-radius: 5px;
   margin: 0;
   margin-right: 10px;
 }
@@ -138,7 +141,20 @@ div {
   margin-right: 20px;
 }
 
+.project-item > .demonstration > a:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+
 #more-projects {
   color: white;
   font-size: 24px;
+}
+
+#protection {
+  opacity: 0.7;
+}
+
+#protection:hover {
+  opacity: 0.7s;
 }

@@ -35,6 +35,16 @@ header {
   margin: 15px;
 }
 
+#logo a {
+  text-decoration: none;
+  color: white;
+}
+
+#logo a:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 nav ul {
   list-style: none;
 }
@@ -138,4 +148,3 @@ footer {
 ::-webkit-scrollbar-track {
   background: white;
 }
-
