@@ -20,8 +20,8 @@ main {
   justify-content: space-between;
   width: 85%;
 
-  border: 3px solid red;
-  border-radius: 5px;
+  border: 1px solid red;
+  /* border-radius: 5px; */
 }
 
 .hero-section-item {
@@ -88,23 +88,57 @@ section {
 }
 
 .projects {
-  width: 85%;
+  width: 65%;
   margin: auto;
+  text-align: center;
 }
 
 .project-item {
+  text-align: left;
   border: 1px solid red;
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 0;
 }
 
-.project-item > .technologies > .tech > p {
-  display: inline;
-
-  border: 1px solid red;
+.project-item h2,
+h3,
+img,
+div {
+  margin: 20px;
 }
 
-.project-item > .demonstration > p {
-  display: inline;
+.project-item img {
+  width: 100%;
+  margin: 0;
+  outline: red 1px solid;
+}
+
+.project-item > .technologies {
+  display: flex;
+  align-items: center;
+}
+
+.project-item > .technologies > p {
+  padding: 10px 30px;
   border: 1px solid red;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.project-item > .demonstration {
+  display: flex;
+  align-items: center;
+}
+
+.project-item > .demonstration > a {
+  padding: 10px 35px;
+  background-color: red;
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+#more-projects {
+  color: white;
+  font-size: 24px;
 }
