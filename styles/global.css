@@ -75,6 +75,11 @@ footer {
   height: 310px;
 }
 
+footer h3 {
+  text-decoration: underline 5px solid #e5383b;
+  text-underline-offset: 8px;
+}
+
 #footer-socials {
   font-size: 56px;
   text-decoration: underline;
@@ -83,47 +88,23 @@ footer {
 
 .footer-content-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .footer-contact {
-  width: 60%;
   padding: 15px;
   margin: 20px;
 }
 
-.footer-contact i {
-  font-size: 72px;
-  margin: 0 20px 0 20px;
-}
-
 .footer-contact a {
   text-decoration: none;
-  color: white;
+  color: #e5383b;
 }
 
 .footer-contact a:hover {
   transition: 0.5s;
-  color: #e5383b;
-}
-
-.footer-previous,
-.footer-next {
-  width: 20%;
-  padding: 15px;
-}
-
-.footer-previous p,
-.footer-next p {
-  border: white 2px solid;
-  padding: 15px;
-}
-
-.footer-previous a,
-.footer-next a {
-  text-decoration: none;
-  color: white;
+  opacity: 0.6;
 }
 
 #footer-copyright {
