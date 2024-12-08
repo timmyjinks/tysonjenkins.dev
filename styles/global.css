@@ -98,7 +98,7 @@ nav a:hover {
 }
 
 .project-item:hover {
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
 }
 
 .project-item h2 {
@@ -122,9 +122,28 @@ nav a:hover {
 .technologies p {
   background-color: var(--code-bg);
   color: var(--text-color-primary);
+  border-bottom: var(--text-color-accent) 1px solid;
   padding: 5px 10px;
   border-radius: 3px;
   font-size: 0.8rem;
+}
+
+.demonstration {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.demonstration a {
+  color: var(--text-color-accent);
+  margin: 5px 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.demonstration a:hover {
+  color: var(--text-color-primary);
 }
 
 footer {
