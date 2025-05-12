@@ -122,7 +122,7 @@ nav a:hover {
 .technologies p {
   background-color: var(--code-bg);
   color: var(--text-color-primary);
-  border-bottom: var(--text-color-accent) 1px solid;
+  border: var(--border-color) 1px dashed;
   padding: 5px 10px;
   border-radius: 3px;
   font-size: 0.8rem;
@@ -135,15 +135,20 @@ nav a:hover {
 }
 
 .demonstration a {
-  color: var(--text-color-accent);
-  margin: 5px 10px;
+  color: white;
+  margin: 5px 0px;
   font-size: 1rem;
   text-decoration: none;
-  transition: 0.5s;
+  background: var(--code-bg);
+  padding: 5px 15px;
+  border-bottom: var(--text-color-accent) 1px solid;
+  border-radius: 5px;
 }
 
 .demonstration a:hover {
-  color: var(--text-color-primary);
+  transition: 0.5s;
+  border-bottom: none;
+  background: var(--border-color);
 }
 
 footer {
