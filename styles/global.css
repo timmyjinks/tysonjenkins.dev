@@ -7,6 +7,16 @@
   --code-bg: #111;
 }
 
+.icon {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.icon:hover {
+  color: var(--text-color-accent);
+}
+
 body {
   font-family: "DejaVu Sans Mono", monospace;
   background-color: var(--primary-bg-color);
