@@ -8,13 +8,13 @@
 }
 
 /* Social Icons */
-.icon {
+.icon i {
   text-decoration: none;
   color: white;
   font-size: 24px;
 }
 
-.icon:hover {
+.icon i:hover {
   color: var(--text-color-accent);
 }
 
