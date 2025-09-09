@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tyson Jenkins - DevOps Engineer & Software Developer specializing in cloud infrastructure, containerization, and full-stack development."
+    />
+    <link rel="stylesheet" href="styles/global.css" />
     <link
       rel="stylesheet"
       media="screen"
       href="https://fontlibrary.org//face/dejavu-sans-mono"
       type="text/css"
     />
-    <link rel="stylesheet" href="styles/global.css" />
     <script
       src="https://kit.fontawesome.com/e3f2f9bf33.js"
       crossorigin="anonymous"
@@ -19,7 +23,7 @@
       type="image/x-icon"
       href="assets/Generative AI, Psychedelic Space banner template, nostalgic 80s, 90s background_ Horizontal illustration of the future landscape with mountains, planets, trees, moon.jpg"
     />
-    <title>Tyson Jenkins</title>
+    <title>Tyson Jenkins - DevOps Engineer</title>
   </head>
   <body>
     <header>
@@ -29,144 +33,203 @@
         </p>
         <nav>
           <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
           <a href="./assets/TysonJenkins_Resume.pdf">Resume</a>
         </nav>
       </div>
     </header>
+
     <main>
       <div class="hero-section">
         <div class="hero-section-item">
           <div class="hero-title">
             <h1 id="hero-name">Tyson Jenkins</h1>
-            <p>Programmer</p>
+            <p>DevOps Engineer & Software Developer</p>
+            <p class="tagline">
+              Building scalable infrastructure and crafting elegant solutions
+            </p>
           </div>
-          <a class="icon" href="https://github.com/timmyjinks"
-            ><i class="fa-brands fa-github fa-2xl"></i
-          ></a>
-          <a class="icon" href="https://www.linkedin.com/in/tyson-jenkins"
-            ><i class="fa-brands fa-linkedin fa-2xl"></i
-          ></a>
+          <div class="social-links">
+            <a class="icon" href="https://github.com/timmyjinks" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              class="icon"
+              href="https://www.linkedin.com/in/tyson-jenkins"
+              title="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
         </div>
         <div class="hero-section-item">
           <div class="about">
-            <p>> cat aboutme.txt</p>
-            <p># Location</p>
-            <p>Salt Lake City, UT</p>
-            <br />
-            <p># Interests</p>
-            <p>["gaming", "manga", "pc building"]</p>
-            <br />
-            <p># Skills</p>
-            <p>
-              ["Docker", "Python", "C++", "C", "HTML/CSS", "React",
-              "JavaScript", "Git"]
-            </p>
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <div class="terminal-button close"></div>
+                <div class="terminal-button minimize"></div>
+                <div class="terminal-button maximize"></div>
+              </div>
+              <div class="terminal-title">tyson@localhost:~</div>
+            </div>
+            <div class="terminal-content">
+              <p><span class="command">$ cat aboutme.txt</span></p>
+              <p><span class="comment"># Location</span></p>
+              <p>Salt Lake City, UT</p>
+              <p></p>
+              <p><span class="comment"># Focus Areas</span></p>
+              <p>
+                <span class="string"
+                  >["cloud infrastructure", "containerization",
+                  "automation"]</span
+                >
+              </p>
+              <p></p>
+              <p><span class="comment"># Tech Stack</span></p>
+              <p>
+                <span class="string"
+                  >["Docker", "Python", "C++", "JavaScript", "NixOS",
+                  "Kubernetes"]</span
+                >
+              </p>
+              <p></p>
+              <p><span class="comment"># Interests</span></p>
+              <p>
+                <span class="string"
+                  >["gaming", "manga", "pc building", "homelab tinkering"]</span
+                >
+              </p>
+              <p>
+                <span class="command">$</span
+                ><span class="terminal-cursor"></span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <section>
-      <h2 id="projects">Projects</h2>
-      <div class="projects">
-        <div class="project-item">
-          <h2>TYSONCLOUD</h2>
-          <img src="assets/TYSONCLOUD.png" />
-          <p>
-            Cloud provider that simplifies web application deployment via docker
-            or github
-          </p>
-          <div class="technologies">
-            <p>Svelte</p>
-            <p>TypeScript</p>
-            <p>Python</p>
-            <p>FastAPI</p>
-            <p>Docker</p>
-            <p>Cloudflare</p>
-            <p>NixOS</p>
+
+    <section class="projects-section">
+      <div class="projects-container">
+        <h2 id="projects">Featured Projects</h2>
+        <div class="projects">
+          <div class="project-item">
+            <h2>TYSONCLOUD</h2>
+            <div class="project-image">
+              <img src="assets/TYSONCLOUD.png" alt="TYSOCLOUD dashboard" />
+            </div>
+            <p>
+              A Cloud platform that simplifies web application deployment
+              through Docker containerization and GitHub integration.
+            </p>
+            <div class="technologies">
+              <p>Svelte</p>
+              <p>TypeScript</p>
+              <p>Python</p>
+              <p>FastAPI</p>
+              <p>Docker</p>
+              <p>Cloudflare</p>
+              <p>NixOS</p>
+            </div>
+            <div class="demonstration">
+              <a href="https://github.com/timmyjinks/TYSONCLOUD">View Code</a>
+            </div>
           </div>
-          <div class="demonstration">
-            <a href="https://github.com/timmyjinks/TYSONCLOUD">Github</a>
+
+          <div class="project-item">
+            <h2>Production Homelab</h2>
+            <div class="project-image">
+              <img src="assets/Homelab.png" alt="Homelab Dashboard" />
+            </div>
+            <p>
+              Personal homelab project infrastructure running 10+ self-hosted
+              services including monitoring, CI/CD, and development
+              environments.
+            </p>
+            <div class="technologies">
+              <p>NixOS</p>
+              <p>Proxmox</p>
+              <p>Docker</p>
+              <p>Traefik</p>
+              <p>Grafana</p>
+              <p>Prometheus</p>
+              <p>Cloudflare</p>
+            </div>
+            <div class="demonstration">
+              <a href="https://github.com/timmyjinks/Operation-Homelab"
+                >View Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-item">
+            <h2>STUPED</h2>
+            <div class="project-image">
+              <img src="assets/STUPED.png" alt="Screentshot of Site" />
+            </div>
+            <p>
+              AI-powered image analysis tool that identifies objects and returns
+              relevant Wikipedia articles. Built during Neumont's Persistence
+              Projects, showcasing machine learning integration with vector
+              databases.
+            </p>
+            <div class="technologies">
+              <p>Next.js</p>
+              <p>Python</p>
+              <p>Flask</p>
+              <p>CLIP</p>
+              <p>Milvus</p>
+              <p>Docker</p>
+            </div>
+            <div class="demonstration">
+              <a href="https://github.com/timmyjinks/img2article">View Code</a>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <h2>2D Game Engine</h2>
+            <div class="project-image">
+              <img src="assets/game_engine.png" alt="Game Screenshot" />
+            </div>
+            <p>
+              Custom 2D game engine built in C++ with SDL2, featuring sprite
+              rendering, collision detection, and scene management. Developed as
+              part of advanced C++ coursework, demonstrating low-level graphics
+              programming and object-oriented design.
+            </p>
+            <div class="technologies">
+              <p>C++</p>
+              <p>SDL2</p>
+              <p>OpenGL</p>
+            </div>
+            <div class="demonstration">
+              <a href="https://github.com/timmyjinks/GameEngine">View Code</a>
+            </div>
           </div>
         </div>
-        <div class="project-item">
-          <h2>Homelab</h2>
-          <img src="assets/Homelab.png" />
-          <p></p>
-          <div class="technologies">
-            <p>NixOS</p>
-            <p>Ubuntu Server</p>
-            <p>Proxmox</p>
-            <p>Docker</p>
-            <p>Cloudflare</p>
-            <p>Pihole</p>
-            <p>Traefik</p>
-          </div>
-          <div class="demonstration">
-            <a href="https://github.com/timmyjinks/Operation-Homelab">Github</a>
-          </div>
-        </div>
-        <div class="project-item">
-          <h2>STUPED</h2>
-          <img src="assets/STUPED.png" />
-          <p>
-            Takes in an image and returns Wikipedia articles it thinks it
-            relates to. Made during Persistence Projects at Neumont College of
-            Computer Science and helping me learn my passion for making projects
-            with Docker
-          </p>
-          <div class="technologies">
-            <p>Nextjs</p>
-            <p>Python</p>
-            <p>Flask</p>
-            <p>CLIP</p>
-            <p>Milvus</p>
-            <p>Docker</p>
-          </div>
-          <div class="demonstration">
-            <!-- <a href="http://cloud.tysonjenkins.codes">Demo</a> -->
-          </div>
-        </div>
-        <div class="project-item">
-          <h2>2D Game Engine</h2>
-          <img src="assets/game_engine.png" />
-          <p>
-            This 2D game engine allows you to build fun 2D games. It was built
-            in the C++ Programming II class at Neumont College of Computer
-            Science. Showcasing my skills in C++ and being creative with game
-            design.
-          </p>
-          <div class="technologies">
-            <p>C++</p>
-            <p>SDL</p>
-          </div>
-          <div class="demonstration">
-            <a href="https://github.com/timmyjinks/GameEngine">Github</a>
-          </div>
-        </div>
-        <!-- <a id="more-projects" href="#">More Projects</a> -->
       </div>
     </section>
-    <footer>
-      <h3>Socials</h3>
-      <div class="footer-content-wrapper">
-        <div class="footer-contact">
-          <p>
-            Github:
-            <a href="https://github.com/timmyjinks"
-              >https://github.com/timmyjinks</a
-            >
-          </p>
-          <p>
-            Linkedin:
-            <a href="https://www.linkedin.com/in/tyson-jenkins"
-              >https://www.linkedin.com/feed/in/tyson-jenkins</a
-            >
-          </p>
+
+    <section id="contact" class="contact-section">
+      <h2>Let's Connect</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/timmyjinks">github.com/timmyjinks</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/tyson-jenkins"
+            >linkedin.com/in/tyson-jenkins</a
+          >
         </div>
       </div>
-      <div>
-        <p id="footer-copyright">Copyright ©2024 by Tyson Jenkins</p>
-      </div>
+    </section>
+
+    <footer>
+      <p id="footer-copyright">
+        © 2025 Tyson Jenkins. Built with passion for scalable infrastructure.
+      </p>
     </footer>
   </body>
 </html>
