@@ -382,6 +382,9 @@ main {
 }
 
 .demonstration a:hover {
+  transition: 0.5s;
+  border-bottom: none;
+  background: var(--border-color);
   color: var(--primary-bg-color);
 }
 
