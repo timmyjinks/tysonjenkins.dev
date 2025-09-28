@@ -346,11 +346,6 @@ main {
   transition: all 0.3s ease;
 }
 
-.technologies p:hover {
-  background-color: var(--border-color);
-  color: var(--primary-bg-color);
-}
-
 .demonstration {
   display: flex;
   gap: 1rem;
