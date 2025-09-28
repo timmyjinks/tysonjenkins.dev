@@ -1,8 +1,0 @@
-# Location
-Salt Lake City, UT
-
-# Interests
-["gaming", "manga", "pc building"]
-
-# Skills
-["HTML/CSS", "JavaScript", "C#", "C++", "Java", "Git"]
