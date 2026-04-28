@@ -1,205 +1,34 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tyson Jenkins - Portfolio" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link
-      rel="stylesheet"
-      media="screen"
-      href="https://fontlibrary.org//face/dejavu-sans-mono"
-      type="text/css"
-    />
-    <script
-      src="https://kit.fontawesome.com/e3f2f9bf33.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" type="image/x-icon" href="assets/space.jpg" />
-    <title>Tyson Jenkins</title>
-  </head>
-  <body>
-    <header>
-      <div class="nav-bar">
-        <p id="logo">
-          <a href="#"><</a><a href="https://grover.sh">></a> Tyson Jenkins
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tyson Jenkins - Portfolio" />
+  <link rel="stylesheet" href="./main.css" />
+  <script src="https://kit.fontawesome.com/e3f2f9bf33.js" crossorigin="anonymous"></script>
+  <title>Tyson Jenkins</title>
+</head>
+
+<body>
+  <a href="https://www.khaydenroberts.com/">[<-- LEFT]</a> WEBRING <a href="https://grover.sh/">[RIGHT-->]</a>
+      Tyson Jenkins Portfolio
+
+      <section>
+        [Resume] <a href="./TysonJenkins_Resume.pdf">stuff I did</a>
+        [Github] <a href="https://github.com/timmyjinks">github/timmyjinks</a>
+        [Forgejo] <a href="https://forgejo.tysonjenkins.dev/timmy">forgejo/timmy</a>
+        [Linkedin] <a href="https://www.linkedin.com/in/tyson-jenkins">corporate</a>
+      </section>
+
+      <section>
+        <h1>Projects</h1>
+        <p><a href="https://github.com/timmyjinks/TYSONCLOUD">[TYSONCLOUD]</a> simple cloudplatform for deploying docker
+          containers
         </p>
-        <nav>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-          <a href="./assets/TysonJenkins_Resume.pdf">Resume</a>
-        </nav>
-      </div>
-    </header>
+        <p><a href="https://github.com/timmyjinks/Operation-Homelab">[Homelab]</a> personal homelab to test and host my
+          own services</p>
+      </section>
+</body>
 
-    <main>
-      <div class="hero-section">
-        <div class="hero-section-item">
-          <div class="hero-title">
-            <h1 id="hero-name">Tyson Jenkins</h1>
-            <p>DevOps Engineer & Software Developer</p>
-          </div>
-          <div class="social-links">
-            <a class="icon" href="https://github.com/timmyjinks" title="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a
-              class="icon"
-              href="https://www.linkedin.com/in/tyson-jenkins"
-              title="LinkedIn"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-        <div class="hero-section-item">
-          <div class="about">
-            <div class="terminal-header">
-              <div class="terminal-buttons">
-                <div class="terminal-button close"></div>
-                <div class="terminal-button minimize"></div>
-                <div class="terminal-button maximize"></div>
-              </div>
-              <div class="terminal-title">tyson@localhost:~</div>
-            </div>
-            <div class="terminal-content">
-              <p><span class="command">$ cat aboutme.txt</span></p>
-              <p><span class="comment"># Location</span></p>
-              <p>Salt Lake City, UT</p>
-              <p></p>
-              <p><span class="comment"># Interests</span></p>
-              <p>
-                <span class="string"
-                  >["gaming", "manga", "pc building", "homelab tinkering"]</span
-                >
-              </p>
-              <p>
-                <span class="command">$</span
-                ><span class="terminal-cursor"></span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <section class="projects-section">
-      <div class="projects-container">
-        <h2 id="projects">Projects</h2>
-        <div class="projects">
-          <div class="project-item">
-            <h2>TYSONCLOUD</h2>
-            <div class="project-image">
-              <img src="assets/TYSONCLOUD.png" alt="TYSOCLOUD dashboard" />
-            </div>
-            <p>
-              A Cloud platform that simplifies web application deployment
-              through Docker containerization and GitHub integration.
-            </p>
-            <div class="technologies">
-              <p>Svelte</p>
-              <p>TypeScript</p>
-              <p>Python</p>
-              <p>FastAPI</p>
-              <p>Docker</p>
-              <p>Cloudflare</p>
-            </div>
-            <div class="demonstration">
-              <a href="https://github.com/timmyjinks/TYSONCLOUD">View Code</a>
-            </div>
-          </div>
-
-          <div class="project-item">
-            <h2>Homelab</h2>
-            <div class="project-image">
-              <img src="assets/Homelab.png" alt="Homelab Dashboard" />
-            </div>
-            <p>
-              Personal homelab project infrastructure running 10+ self-hosted
-              services including monitoring, CI/CD, and development
-              environments.
-            </p>
-            <div class="technologies">
-              <p>NixOS</p>
-              <p>Ubuntu Server</p>
-              <p>Proxmox</p>
-              <p>Docker</p>
-              <p>Traefik</p>
-              <p>Cloudflare</p>
-            </div>
-            <div class="demonstration">
-              <a href="https://github.com/timmyjinks/Operation-Homelab"
-                >View Code</a
-              >
-            </div>
-          </div>
-
-          <div class="project-item">
-            <h2>STUPED</h2>
-            <div class="project-image">
-              <img src="assets/STUPED.png" alt="Screentshot of Site" />
-            </div>
-            <p>
-              AI-powered image analysis tool that identifies objects and returns
-              relevant Wikipedia articles. Built during Neumont's Persistence
-              Projects, showcasing machine learning integration with vector
-              databases.
-            </p>
-            <div class="technologies">
-              <p>Next.js</p>
-              <p>Python</p>
-              <p>Flask</p>
-              <p>CLIP</p>
-              <p>Milvus</p>
-              <p>Docker</p>
-            </div>
-            <div class="demonstration">
-              <a href="https://github.com/timmyjinks/img2article">View Code</a>
-            </div>
-          </div>
-
-          <div class="project-item">
-            <h2>2D Game Engine</h2>
-            <div class="project-image">
-              <img src="assets/game_engine.png" alt="Game Screenshot" />
-            </div>
-            <p>
-              Custom 2D game engine built in C++ with SDL2, featuring sprite
-              rendering, collision detection, and scene management. Developed as
-              part of advanced C++ coursework, demonstrating low-level graphics
-              programming and object-oriented design.
-            </p>
-            <div class="technologies">
-              <p>C++</p>
-              <p>SDL2</p>
-              <p>OpenGL</p>
-            </div>
-            <div class="demonstration">
-              <a href="https://github.com/timmyjinks/GameEngine">View Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <h2>Let's Connect</h2>
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fa-brands fa-github"></i>
-          <a href="https://github.com/timmyjinks">github.com/timmyjinks</a>
-        </div>
-        <div class="contact-item">
-          <i class="fa-brands fa-linkedin"></i>
-          <a href="https://www.linkedin.com/in/tyson-jenkins"
-            >linkedin.com/in/tyson-jenkins</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p id="footer-copyright">© 2025 Tyson Jenkins.</p>
-    </footer>
-  </body>
 </html>
