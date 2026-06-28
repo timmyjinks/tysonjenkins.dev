@@ -21,6 +21,8 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
+      padding: 0;
+      margin: 0;
     }
 
     a {
@@ -170,26 +172,27 @@
     }
 
     .top {
-      padding: 8px 0px;
+      padding: 8px 16px;
       display: flex;
-      position: relative;
       justify-content: center;
-      border-bottom: 1px solid #252525;
       align-items: center;
+      gap: 24px;
+      border-bottom: 1px solid #252525;
       flex-shrink: 0;
       font-size: 13px;
       color: #2e2e2e;
+      position: relative;
     }
 
     #copyright {
       position: absolute;
+      white-space: nowrap;
       right: 16px;
     }
 
     .webring {
-      display: flex;
-      align-items: center;
-      gap: 0px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .webring a {
@@ -224,8 +227,12 @@
       }
 
       .content,
-      .bottom {
+      .top {
         padding: 24px;
+      }
+
+      #copyright {
+        display: none;
       }
 
       .projects-grid {
