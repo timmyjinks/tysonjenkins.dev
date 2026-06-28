@@ -120,7 +120,7 @@
     }
 
     .proj {
-      border: 1px solid #1a1a1a;
+      border: 1px solid #252525;
       padding: 28px;
     }
 
@@ -156,7 +156,7 @@
     .tag {
       font-size: 12px;
       color: #272727;
-      border: 1px solid #1e1e1e;
+      border: 1px solid #2e2e2e;
       padding: 3px 8px;
     }
 
@@ -169,27 +169,33 @@
       color: #cc3333;
     }
 
-    .bottom {
-      border-top: 1px solid #1a1a1a;
-      padding: 14px 56px;
+    .top {
+      padding: 8px 0px;
       display: flex;
-      justify-content: space-between;
+      position: relative;
+      justify-content: center;
+      border-bottom: 1px solid #252525;
       align-items: center;
       flex-shrink: 0;
       font-size: 13px;
-      color: #1e1e1e;
+      color: #2e2e2e;
+    }
+
+    #copyright {
+      position: absolute;
+      right: 16px;
     }
 
     .webring {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 0px;
     }
 
     .webring a {
       color: #777;
       padding: 3px 10px;
-      border: 1px solid #1a1a1a;
+      border: 1px solid #252525;
       font-size: 12px;
     }
 
@@ -231,13 +237,13 @@
 
 <body>
 
-  <div class="bottom">
+  <div class="top">
     <div class="webring">
       <a href="https://www.khaydenroberts.com/">&laquo; prev</a>
       <span class="webring-name">tinkring</span>
       <a href="https://grover.sh">next &raquo;</a>
     </div>
-    <span>&copy; 2025 tyson jenkins</span>
+    <span id="copyright">&copy; 2025 tyson jenkins</span>
   </div>
 
   <div class="page">
